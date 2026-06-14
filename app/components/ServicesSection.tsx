@@ -10,7 +10,7 @@ const ServicesSection = () => {
   return (
     <section className="relative bg-[#f8f5f0] section-pad border-t border-black/5">
       <div className="mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-start">
-        <div className="lg:col-span-5 hidden lg:block sticky top-[100px] self-start h-fit">
+        <div className="hidden h-fit self-start lg:sticky lg:top-[140px] lg:col-span-5 lg:block">
           <h2 className="text-[#1a1a1a] text-4xl 2xl:text-5xl font-serif leading-tight mb-8">
             {t.services.titleA} <br />
             <span className="text-[#999999]">{t.services.titleB}</span>
@@ -28,7 +28,7 @@ const ServicesSection = () => {
           </h2>
         </div>
 
-        <div className="lg:col-span-7 flex flex-col gap-14 md:gap-20 lg:gap-24">
+        <div className="lg:col-span-7 flex flex-col gap-14 md:gap-20 lg:gap-28 lg:pb-32">
           {t.services.items.map((service) => (
             <div
               key={service.title}

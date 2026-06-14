@@ -9,7 +9,7 @@ const Stats = () => {
   return (
     <section className="relative bg-[#f8f5f0] section-pad border-t border-black/5">
       <div className="mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-start">
-        <div className="lg:col-span-5 hidden lg:block sticky top-[100px] self-start h-fit">
+        <div className="hidden h-fit self-start lg:sticky lg:top-[140px] lg:col-span-5 lg:block">
           <h2 className="text-[#1a1a1a] text-4xl 2xl:text-5xl font-serif leading-tight mb-8">
             {t.stats.titleA} <br />
             <span className="text-[#999999]">{t.stats.titleB}</span>
@@ -31,7 +31,7 @@ const Stats = () => {
           </p>
         </div>
 
-        <div className="lg:col-span-7 flex flex-col gap-12 md:gap-20">
+        <div className="lg:col-span-7 flex flex-col gap-12 md:gap-20 lg:gap-24 lg:pb-32">
           {t.stats.items.map((stat) => (
             <div
               key={stat.label}
